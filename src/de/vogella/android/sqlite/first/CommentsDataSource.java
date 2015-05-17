@@ -21,6 +21,11 @@ public class CommentsDataSource {
 		dbHelper = new MySQLiteHelper(context);
 	}
 
+	/**
+	 * BUG 1 here !!!
+	 * 
+	 * @throws SQLException
+	 */
 	public void open() throws SQLException {
 		database = dbHelper.getWritableDatabase();
 	}
